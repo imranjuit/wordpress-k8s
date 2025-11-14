@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Namespace
-metadata:
+meta
   name: database
 ---
 apiVersion: v1
 kind: Namespace
-metadata:
+meta
   name: wordpress
