@@ -1,0 +1,5 @@
+# .sops.yaml at root of your repo
+creation_rules:
+  - path_regex: secrets/.*\.yaml
+    encrypted_regex: '^(data|stringData)$'
+    age: age1eatgtk8galkrvdrmpnxhz0a03gnvxkvknvlds5gysxsxs9jh756q3wchp7
