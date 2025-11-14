@@ -3,3 +3,7 @@ kind: Kustomization
 
 resources:
   - wordpress/wordpress-service.yaml
+  - wordpress/wordpress-deployment.yaml
+  - wordpress/wordpress-pvc.yaml
+  - ../secrets/wordpress-secret.sops.yaml
+  

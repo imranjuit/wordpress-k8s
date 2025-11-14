@@ -3,3 +3,7 @@ kind: Kustomization
 
 resources:
   - mariadb/mariadb-service.yaml
+  - mariadb/mariadb-statefulset.yaml
+  - mariadb/mariadb-pvc.yaml
+  - ../secrets/mariadb-secret.sops.yaml
+

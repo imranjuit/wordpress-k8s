@@ -1,6 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
-meta
+metadata:
   name: wordpress
   namespace: wordpress
 spec:
@@ -9,7 +9,7 @@ spec:
     matchLabels:
       app: wordpress
   template:
-    meta
+    metadata:
       labels:
         app: wordpress
     spec:
