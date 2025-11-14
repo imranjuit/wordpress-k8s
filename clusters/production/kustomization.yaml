@@ -6,9 +6,3 @@ resources:
   - databases/
   - applications/
 
-secretGenerator:
-  - name: sops-age
-    namespace: flux-system
-    files:
-      - age.agekey=../../age.key
-    type: Opaque
