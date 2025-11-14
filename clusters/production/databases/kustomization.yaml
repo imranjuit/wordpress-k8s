@@ -2,5 +2,9 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-  - ../../databases/mariadb/
-  - ../../secrets/mariadb-secret.sops.yaml
+  - ../../applications/wordpress/wordpress-deployment.yaml
+  - ../../applications/wordpress/wordpress-service.yaml
+  - ../../secrets/wordpress-secret.sops.yaml
+
+generatorOptions:
+  disableNameSuffixHash: true
